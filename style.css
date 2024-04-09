@@ -1,0 +1,27 @@
+body{
+    background-image: url("imagenes/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   align-content: center;
+}
+
+.titulo{
+    color: rgba(30, 97, 151, 0.685);
+   background-color: rgb(230, 230, 218);
+   font-family:'Courier New', Courier, monospace;
+   font-size: 20px;
+}
+
+.problema1{
+    background-color: rgb(66, 224, 66);
+    opacity: 0.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+.problema1-title{
+    background-color: yellow;
+}

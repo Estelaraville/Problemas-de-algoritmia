@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de algoritmia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/problemas.js"></script>
+</head>
+<body>
+    <header class="titulo">
+        <h1>PROBLEMAS DE ALGORITMIA</h1>
+    </header>
+
+    <br><br>
+
+    <div class="problema1">
+        <div class="problema-continer">
+            <h2 class="problema1-title"><center>Problema 1</center></h2>
+            <h3>Dada una lista de palabras separadas por un espacio, invierte el orden de dichas palabras. 
+                Las palabras pueden estar separadas unicamente por espacios.</h3>
+            <div class="problema-content" >
+                <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio: " id="p1-input" onkeypress="return validarLetras(event)">
+                <button type="button" class="problema-button" style="margin-top: 1rem" onclick="invertir()">Invertir palabras</button>
+                <pre class="problema-output" id="p1-output">Esperando datos...</pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
