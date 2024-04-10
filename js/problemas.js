@@ -5,6 +5,7 @@ function validarLetras(event){
     }
     
     if ((teclado >= 65 && teclado <= 90) || (teclado >= 97 && teclado <= 122)) {
+        
         return true;
     }
     
@@ -12,7 +13,11 @@ function validarLetras(event){
 }
 
 function invertir(){
-    var palabra = document.getElementById("p1-input");
-    var valorpalabra = palabra.value;
-    alert(valorpalabra)
+    var palabra = document.getElementById("p1-input").value;
+    var inversion = palabra.split("").reverse("").join("");   
+     alert("La palabra invertida es: "+inversion);
+}
+
+function borrarDatos(){
+    document.getElementById("p1-input").value = "";
 }

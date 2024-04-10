@@ -18,10 +18,11 @@ body{
 .problema1{
     background-color: rgb(66, 224, 66);
     opacity: 0.6;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
 }
 
 .problema1-title{
     background-color: yellow;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
