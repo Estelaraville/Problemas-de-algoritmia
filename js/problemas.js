@@ -72,5 +72,5 @@ function borrarVectores(){
     document.getElementById("p2-y3").value = "";
     document.getElementById("p2-y4").value = "";
     document.getElementById("p2-y5").value = "";
-
 }
+
