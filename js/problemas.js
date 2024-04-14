@@ -74,3 +74,57 @@ function borrarVectores(){
     document.getElementById("p2-y5").value = "";
 }
 
+function validarLetras2(event){
+    var teclado2 = (document.all)? event.keyCode : event.which;
+    if (teclado2 == 13 || teclado2 == 8 || teclado2 == 44) {
+        return true;
+    }
+    if ((teclado2 >= 65 && teclado2 <= 90)) {   
+        return true;
+    } 
+    event.preventDefault();
+}
+
+var listaPalabras=[];
+
+function insertarOtra(){      
+    var palabra= document.getElementById("p3-input").value.trim();
+    if(palabra !==""){
+        listaPalabras.push(palabra);
+        document.getElementById("p3-input").value=""
+    }
+    
+}
+
+function calcularPalabra(){
+    var listaPalabrasNuevas = [];
+    for (var i = 0; i < listaPalabras.length; i++) {
+        var contenedorPalabra = listaPalabras[i];
+        var palabraNueva = "";
+        for (var j = 0; j < contenedorPalabra.length; j++) {
+            var letra = contenedorPalabra[j];
+            var encontrarPalabraRepetida = false;
+            for (var k = 0; k < palabraNueva.length; k++) {
+                if (palabraNueva[k] === letra) {
+                    encontrarPalabraRepetida = true;
+                    break;
+                }
+            }
+            if (!encontrarPalabraRepetida) {
+                palabraNueva += letra;
+            }
+        }
+        listaPalabrasNuevas.push(palabraNueva);
+    }
+    var maximaPalabra=listaPalabrasNuevas[0];
+    for(var i=1; i<listaPalabrasNuevas.length; i++){
+        if(listaPalabrasNuevas[i].length>maximaPalabra.length){
+            maximaPalabra=listaPalabrasNuevas[i]
+        }
+    }
+    alert("La lista original es: "+listaPalabras+"\n"+"La lista con las nuevas palabras es: "+listaPalabrasNuevas+"\n"+"La palabra con mas caracteres individuales es: "+maximaPalabra+" con "+maximaPalabra.length+" caracteres");
+}
+
+function borrarLista(){
+    listaPalabras=[]
+}
