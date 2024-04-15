@@ -15,11 +15,12 @@ function validarLetras(event){
 function invertir(){
     var palabra = document.getElementById("p1-input").value;
     var inversion = palabra.split("").reverse("").join("");   
-     alert("La palabra invertida es: "+inversion);
+    document.getElementById("p1-output").textContent = "La palabra invertida es: " + inversion;
 }
 
 function borrarDatos(){
     document.getElementById("p1-input").value = "";
+    document.getElementById("p1-output").textContent = "Esperando datos...";
 }
 
 function validarNúmeros(event){
@@ -57,7 +58,8 @@ function vectores(){
         producto=producto + (vectorx[i]*vectory[i]);
     }
 
-    alert("Los números ordenados son: "+vectorx+" y "+vectory+" y el producto escalar mínimo es de : "+producto);
+    document.getElementById("p2-output").textContent = "Los números ordenados son: "+vectorx+" y "+vectory+
+    " y el producto escalar mínimo es de: "+producto;
 }
 
 function borrarVectores(){
@@ -72,6 +74,8 @@ function borrarVectores(){
     document.getElementById("p2-y3").value = "";
     document.getElementById("p2-y4").value = "";
     document.getElementById("p2-y5").value = "";
+
+    document.getElementById("p2-output").textContent = "Esperando datos..."
 }
 
 function validarLetras2(event){
@@ -122,9 +126,10 @@ function calcularPalabra(){
             maximaPalabra=listaPalabrasNuevas[i]
         }
     }
-    alert("La lista original es: "+listaPalabras+"\n"+"La lista con las nuevas palabras es: "+listaPalabrasNuevas+"\n"+"La palabra con mas caracteres individuales es: "+maximaPalabra+" con "+maximaPalabra.length+" caracteres");
+    document.getElementById("p3-output").textContent = "La lista original es: "+listaPalabras+"\n"+"La lista con las nuevas palabras es: "+listaPalabrasNuevas+"\n"+"La palabra con mas caracteres individuales es: "+maximaPalabra+" con "+maximaPalabra.length+" caracteres";
 }
 
 function borrarLista(){
     listaPalabras=[]
+    document.getElementById("p3-output").textContent="Esperando datos...";
 }

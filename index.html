@@ -22,7 +22,7 @@
             <div class="problema-content" >
                 <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio: " id="p1-input" onkeypress="return validarLetras(event)">
                 <button type="button" class="problema-button" style="margin-top: 1rem" onclick="invertir()">Invertir palabras</button>
-                <pre class="problema-output" id="p1-output">Esperando datos...</pre>
+                <h3><pre class="problema-output" id="p1-output">Esperando datos...</pre></h3>
 
                 <p><button type="button" class="borrar" onclick="borrarDatos()">Borrar palabra</button></p>
             </div>
@@ -109,7 +109,7 @@
                     </tr>
                 
             </table>
-                <pre class="problema-output" id="p12-output">Esperando datos...</pre>
+                <h3><pre class="problema-output" id="p2-output">Esperando datos...</pre></h3>
                 <p><button type="button" class="borrar" onclick="borrarVectores()">Borrar vectores</button></p>
 
             </div>
@@ -125,13 +125,14 @@
                 <br>
                 Ejemplo: CASA = 3 (c,a,s) PERRO = 4 (p,e,r,o)
                 <br>
-                Considera solamente el alfabeto de A-Z en MAYÚSCULAS. Las palabras ingresadas deberan estar separadas por una coma, NO SE ACEPTAN ESPACIOS
+                Considera solamente el alfabeto de A-Z en MAYÚSCULAS. Las palabras ingresadas deberan estar separadas por una coma, NO SE ACEPTAN ESPACIOS.
+                Para guardar al menos una palabra tiene que apretar el boton de insertar otra palabra
             </h3>
             <div class="problema-content" >
                 <input type="text" class="problema-input" placeholder="Ingresa las palabras: " id="p3-input" onkeypress="return validarLetras2(event)">
                 <button type="button" class="problema-button" style="margin-top: 1rem" onclick="insertarOtra()">Insertar otra palabra</button>                
                 <p><button type="button" onclick="calcularPalabra()">Calcular palabras</button></p>
-                <pre class="problema-output" id="p3-output">Esperando datos...</pre>
+                <h3><pre class="problema-output" id="p3-output">Esperando datos...</pre></h3>
             </div>
             <p><button type="button" class="borrar" onclick="borrarLista()">Borrar lista</button></p>
             
